@@ -12,6 +12,8 @@ theme:
         background: "FFF0EE"
 ---
 
+<!-- new_lines: 1 -->
+
 ![image:width:50%](assets/rat-dance-2.gif)
 
 <!-- no_footer -->
@@ -65,6 +67,8 @@ _(and to your pocket)_
 <!-- new_lines: 3 -->
 
 **Imagine a rat.**
+
+<!-- pause -->
 
 ![](assets/rat-cup.gif)
 
@@ -198,6 +202,14 @@ sudo oryx -i wlp3s0
 
 <!-- end_slide -->
 
+<!-- new_lines: 2 -->
+
+![image:width:45%](assets/lethimcook-invert.gif)
+
+<!-- no_footer -->
+
+<!-- end_slide -->
+
 ![image:width:80%](assets/ratatui-header.png)
 
 <!-- alignment: center -->
@@ -214,11 +226,13 @@ sudo oryx -i wlp3s0
 
 - `250+` contributors, hundreds of apps, `8M+` crate downloads
 
-- `tokio-console`, `yazi`, `dioxus-cli`, `atuin`, `gitui`
+- `tokio-console`, `yazi`, `dioxus-cli`, `atuin`, `gitui` & more
 
 - Used by `Netflix`, `OpenAI`, `OVHcloud` & many more
 
 <!-- end_slide -->
+
+# Example
 
 <!-- alignment: center -->
 
@@ -227,6 +241,8 @@ sudo oryx -i wlp3s0
 [](https://github.com/zaghaghi/openapi-tui)
 
 <!-- end_slide -->
+
+# Example
 
 <!-- alignment: center -->
 
@@ -269,6 +285,8 @@ _Or cheesy? idk tbh_
 <!-- end_slide -->
 
 ## Templates
+
+<!-- alignment: center -->
 
 | Template           | Description                            |
 | ------------------ | -------------------------------------- |
@@ -377,6 +395,10 @@ We call this:
 
 _https://www.urbandictionary.com/define.php?term=ratatuify_
 
+<!-- pause -->
+
+_But how is it possible?_ 🤔
+
 <!-- end_slide -->
 
 ### impl Backend
@@ -434,7 +456,11 @@ _mousefood_!
 
 <!-- end_slide -->
 
-# Know your hardware
+![image:width:90%](assets/ratatui-epd.jpg)
+
+<!-- end_slide -->
+
+# Know your hardware!
 
 **ESP32** by Espressif Systems
 
@@ -500,7 +526,7 @@ cargo install espflash
 
 <!-- pause -->
 
-_.cargo/config.toml_:
+`.cargo/config.toml`:
 
 ```toml
 [build]
@@ -633,6 +659,8 @@ mpv /home/orhun/downloads/tuitar-final.mp4
 <!-- alignment: center -->
 
 [](https://www.youtube.com/live/es48dmNWMVQ)
+
+Live demo at Rust Forge!
 
 <!-- end_slide -->
 
@@ -817,9 +845,11 @@ via [](https://github.com/junkdog/tachyonfx)
 
 <!-- end_slide -->
 
-## Challenge
+## Challenges
 
-<!-- pause -->
+![image:width:80%](assets/ratted-sir.png)
+
+<!-- end_slide -->
 
 ### Bigger screen == bigger problems
 
@@ -854,7 +884,41 @@ CONFIG_ESP_MAIN_TASK_STACK_SIZE=16384
 
 <!-- end_slide -->
 
-btw...
+### Build hell
+
+Random panics / loadprohibited / semaphore asserts with `opt-level` > 1
+
+<!-- pause -->
+
+```toml
+[profile.release]
+opt-level = 3
+
+[profile.release.package."firmware"]
+opt-level = 1
+
+[profile.dev]
+debug = true
+opt-level = "z"
+```
+
+<!-- pause -->
+
+<!-- alignment: center -->
+
+Caused by LLVM optimizations + Xtensa backend bugs + undefined behavior (allocation, alignment, lifetimes, etc.)
+
+<!-- pause -->
+
+i.e. `pain`
+
+<!-- jump_to_middle -->
+
+![image:width:70%](assets/rat-cry.gif)
+
+<!-- end_slide -->
+
+btw you can watch me suffer
 
 <!-- pause -->
 
