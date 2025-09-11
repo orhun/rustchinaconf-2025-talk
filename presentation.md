@@ -605,6 +605,40 @@ loop {
 
 <!-- end_slide -->
 
+### Simulator 🤖
+
+```rust {1-15|1-8|10|12-13|15|1-15}
+let mut simulator_window = Window::new(
+    "mousefood simulator",
+    &OutputSettings {
+        scale: 4,
+        max_fps: 30,
+        ..Default::default()
+    },
+);
+
+let mut display = SimulatorDisplay::new(Size::new(128, 64));
+
+let config = EmbeddedBackendConfig::default();
+let backend = EmbeddedBackend::new(&mut display, config);
+
+let mut terminal = Terminal::new(backend)?;
+```
+
+<!-- alignment: center -->
+
+Starts Ratatui with the simulator backend
+
+<!-- end_slide -->
+
+![](assets/rat-ski.gif)
+
+```bash +exec
+cargo run --manifest-path ../mousefood/Cargo.toml -p simulator
+```
+
+<!-- end_slide -->
+
 ![](assets/are-we-embedded-yet.png)
 
 <!-- alignment: center -->
