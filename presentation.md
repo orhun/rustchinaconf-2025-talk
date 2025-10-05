@@ -4,7 +4,7 @@ theme:
   override:
     footer:
       style: template
-      left: "@orhundev"
+      left: "@orhun.dev | @ratatui.rs"
       right:
         image: assets/rust-global-banner-padded.png
     default:
@@ -104,7 +104,7 @@ _rat goes to ytmp3downloader.cc_
 
 <!-- new_lines: 3 -->
 
-**Imagine a rat.**
+**Imagine a rat (again)**
 
 ![](assets/rat-cup-2.gif)
 
@@ -144,7 +144,7 @@ _rat uses file search_
 
 <!-- no_footer -->
 
-**Imagine a rat.**
+**Imagine a rat (sorry)**
 
 ![](assets/rat-sus.gif)
 
@@ -210,6 +210,10 @@ sudo oryx -i wlp3s0
 
 <!-- end_slide -->
 
+![image:width:100%](assets/real-ratatui.jpg)
+
+<!-- end_slide -->
+
 ![image:width:80%](assets/ratatui-header.png)
 
 <!-- alignment: center -->
@@ -232,7 +236,13 @@ sudo oryx -i wlp3s0
 
 <!-- end_slide -->
 
-# Example
+```bash +exec
+handlr open https://github.com/openai/codex/pull/629
+```
+
+<!-- end_slide -->
+
+# Example TUI
 
 <!-- alignment: center -->
 
@@ -242,7 +252,7 @@ sudo oryx -i wlp3s0
 
 <!-- end_slide -->
 
-# Example
+# Example TUI
 
 <!-- alignment: center -->
 
@@ -250,7 +260,33 @@ sudo oryx -i wlp3s0
 
 [](https://github.com/MAIF/yozefu)
 
+<!-- end_slide -->
+
+What else?
+
 <!-- pause -->
+
+```bash +exec +acquire_terminal
+exabind
+```
+
+<!-- pause -->
+
+```bash +exec
+handlr open https://orhun.dev/ratzilla/demo/
+```
+
+<!-- pause -->
+
+```
+rebels-in-the-sky
+```
+
+<!-- end_slide -->
+
+<!-- alignment: center -->
+
+![](assets/rat-demand.gif)
 
 _Show me!_
 
@@ -664,11 +700,13 @@ Ratatui is now `no_std`!
 
 <!-- pause -->
 
+Learn guitar!
+
 ![](assets/pcb-works.jpg)
 
 <!-- alignment: center -->
 
-_Powered by Rust, Ratatui and 9 volt battery!_
+| _Powered by Rust, Ratatui and 9 volt battery!_
 
 <!-- end_slide -->
 
@@ -1020,12 +1058,12 @@ btw you can watch me suffer
 
 <!-- no_footer -->
 
-# Thank you!
+# 谢谢 !
 
 ![](assets/rat-ending.gif)
 
-[](https://github.com/orhun)  
-[](https://github.com/orhun/tuitar)
+`https://github.com/orhun`  
+`https://youtube.com/orhundev`
 
 ---
 
